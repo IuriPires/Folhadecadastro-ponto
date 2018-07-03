@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+	//outline:none;
+	font-family: "calibri";
+	font-size: 16px;
+	}
+
+td.center{
+	padding: 0;
+}	
+
+td.titulo{
+	padding: 0;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+table{
+	width: 842px;
+	border-collapse:collapse;
+	display: table;
+	border-spacing: 0;
+}
+
+
+	
+img#centro{
+	width: 280px;
+	height: 120px;
+	position: static;
+	margin-left:280px;
+	text-align: center;
+}
+
+table#cabecalho{
+	margin-bottom: 20px;
+}
+
+#corpo  tr td{
+	text-align: center;
+}
+
+tr#status{
+	font-weight: bold;
+	background-color: #CCCCCC;
+}
+
+table#corpo{
+	margin-bottom: 20px;
+}
+
+table#corpo  tr td{
+	padding: 0 0 0 0 ;
+	border: 1px solid black;
+	height: 20px;
+}
+
+#corpo.folga{
+	border: 1px solid black;
+}
+
+.soma {
+	padding-bottom: 30px;
+}
+
+
+
+#assina {
+    //display: table-cell;
+    vertical-align: bottom;
+	text-align: center;
+	//text-bottom: center;
+	height: 150px;
+}
+
+#assina1{
+	text-align: center;
+}
+
+#carimbo{
+	text-align: center;
+	font-size: 12px;	
+}
+
+
