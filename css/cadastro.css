@@ -35,22 +35,25 @@ header {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
 }
 
+form {padding: 15px;}
 
 .form-group {
     width: 35vw;
     height: 50vh;
-    box-shadow: 10px 10px 5px 0px rgba(191,184,191,1);
+    box-shadow: 0 2px 15px 2px #000000;   
     margin-top: 25px;
 }
+
 
 .col-1 {
     display: flex;
     height: 40px;
     line-height: 2;
+    margin-top: 10px;
 
 }
 
@@ -58,6 +61,7 @@ input[type=text] {
     border-style: none;
     border-bottom: 1px solid #888888;
     margin-bottom: 15px;
+    width: 120%;
 }
 label {
     height: 100%;
@@ -74,6 +78,5 @@ label {
 .botao {
     margin-top: 20px;
     height: 40px;
-    width: 120px;
-    border-radius: 
+    width: 120px; 
 }

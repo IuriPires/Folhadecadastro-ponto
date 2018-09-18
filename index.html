@@ -1,56 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>Formul�rio: combobox</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style-main.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> <!--Link da fonte usada-->
-    </head>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    
+    
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 
-    <body>
-        
-        <header>
-            <img src="imagem/casaRB.jpg" width="350px" height="100px">
-        
-        </header>
-        
-        
-        <div class="box-main">
-            <div class="folha-pt"><p>Folha de ponto</p></div>
-             <form action="index2.php" method="post">
-            
-                <div>
-		            <label>Escolha o m�s:</label>
-                    <select class="select-estiloso" name="mes">
-                        <option value="01">Janeiro</option>
-                        <option value="02">Fevereiro</option>
-                        <option value="03">Marco</option>
-		                <option value="04">Abril</option>
-                        <option value="05">Maio</option>
-                        <option value="06">Junho</option>
-		                <option value="07">Julho</option>
-                        <option value="08">Agosto</option>
-                        <option value="09">Setembro</option>
-		                <option value="10">Outubro</option>
-                        <option value="11">Novembro</option>
-		                <option value="12">Dezembro</option> 
-                    </select>
-		          <div class="box-input">
-                    <label>Matricula:</label> 
-		            <input class="input-matricula" type="text" name="matricula" SIZE=10 MAXLENGTH=10 />     
-                    </div>
-                </div>
-                 <div class="box-btn">
-                    <input class="btn-i "type="submit" value="GERAR FOLHA"/>     
-                </div>
-            </form>
-            
-                
-              
-		
-            
-        </div>
-       
-    </body>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body style="height: 100vh;">
+      <header>
+            <nav class="light-blue lighten-1" role="navigation">
+                    <div class="nav-wrapper container"><a id="logo-container" href="http://www.casaruibarbosa.gov.br/" class="brand-logo">Fundação Casa de Rui Barbosa</a>
+                      <ul style="margin-left: 25px" class="right hide-on-med-and-down">
+                        <li><img style="margin-top: 10px; margin-right: 3px" src="imagem/bandeiranacionalbrasil_.jpg" width="60px"></li>
+                      </ul>
+      </header>
+
+      <main> <!--Navegação Principal-->
+          <!-- <nav class="light-blue lighten-1" role="navigation"> -->
+                        <div class="container">
+                          <div class="all">
+                              <br><br>
+                              <h1 class="header center grey-text">Gerenciamento de folhas</h1>
+                              <div class="row center">
+                                <h5 class="header col s12 light">Aqui você pode gerar, alterar/excluir cadastros e realizar novos cadastros</h5>
+                              </div>
+                              <div class="row-center">
+                                  <h5 class="header center col s12 light">Nos links acima você pode escolher algumas das opções</h5>
+                              </div>
+                              <div style="margin-top: 80px" class="row center">
+                                <a href="#" id="download-button" class="btn-large waves-effect waves-light blue btn">Gerar folha</a>
+                                <a href="editar2.php" id="download-button" class="btn-large waves-effect waves-light blue btn">Altera/Excluir</a>
+                                <a href="cadastro1.php" id="download-button" class="btn-large waves-effect waves-light blue btn">Cadastras</a>
+                              </div>
+                              <br><br>
+                              <div id="root"> <!--Elemento Root-->
+                               
+                            </div>
+                          
+                          </div>
+                        
+                      </div>
+          <!-- </nav> -->
+      </main>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="script/gerar.js"></script>
+    <script type="text/javascript" src="select-materialize.js"></script>
+  
+
+  </body>
 </html>
+      
